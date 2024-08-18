@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@font-face {
+  font-family: poppins;
+  src: url(../font/Poppins-Bold.ttf);
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+header {
+  background:#2095ae;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 200px;
+  transition: 0.5 ease;
+}
+
+
+.logo  {
+  width: 250px;
+  height: 100%;
+  
+}
+
+.logo>a>img {
+  width: 100%;
+  height: 100%;
+}
+
+
+header .brand {
+  color: #00aeef;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+  /* position: relative; */
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: #00aeef;
+  color: #ffffff;
+
+  /* color: black; */
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: 0.5s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: "";
+  position: absolute;
+  background: #00aeef;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease;
+  margin-top: 5px;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+.shras-holidays {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 26, 121, 1) 35%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.shras-holidays p {
+  letter-spacing: 2px;
+}
+
+/* CSS for ScrollBar */
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.scrollbar:hover::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #6c6b6b;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 50px 100px;
+  padding: 0 80px;
+  /* position: relative; */
+}
+.box {
+  border: 30px solid transparent;
+  border-image: linear-gradient(
+      45deg,
+      rgba(0, 212, 255, 1) 0%,
+      rgba(9, 26, 121, 1) 35%,
+      rgba(2, 0, 36, 1) 100%
+    )
+    1;
+  position: absolute;
+  left: -50px;
+  top: -130px;
+  width: 350px;
+  height: 370px;
+  z-index: -1;
+}
+.left-image {
+  
+  /* width: 100px; */
+  flex: 0 0 45%;
+  position: relative;
+}
+.image {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  top: -90px;
+}
+.image img {
+  width: 100%;
+}
+.content {
+  flex: 0 0 50%;
+}
+
+.content h3 {
+  background:#2095ae;
+}
+.content h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.content h1 {
+  font-family: "Font Awesome 5 Free";
+  letter-spacing: 0.02em;
+  font-weight: bold;
+}
+.content p {
+  margin-bottom: 15px;
+}
+
+.btn-box {
+  margin-top: 20px;
+}
+.btn-style-one {
+  font-size: 17px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 30px;
+  font-weight: 600;
+  overflow: hidden;
+  letter-spacing: 0.02em;
+  background:#2095ae;
+
+ 
+}
+
+.btn-style-one:hover {
+ background:#2095ae;
+  color: #ffffff;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+.container{
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+.left-image .box{
+  height: auto;
+  height: 100px;
+  width: 40%;
+  border: 0px solid transparent;
+}
+.left-image .image{
+  width: 100%;
+}
+.left-image{
+  width: 300px;
+  max-width: 300px;
+  display: block;
+  top: 100px;
+}
+.content{
+  /* margin-top: 500px; */
+  position: absolute;
+  top: 500px;
+  max-width: 300px;
+}
+
+
+}
+
+@media (max-width: 1140px) {
+  .box {
+    width: 300px;
+    height: 300px;
+    
+  } .image{
+    width: 300px;
+    height: 200px;
+    
+  }
+  .container{
+    display: flex;
+    padding: 0;
+
+  }
+  .left-image {
+    flex: 0 0 60%;
+    margin: 0;
+    padding: 0;
+    }
+   
+
+  
+  .content {
+    /* max-width: 500px; */
+    padding: 0;
+    margin: 0;
+    width: 400px;
+  }
+  header {
+    padding: 12px 20px;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .home .media-icons {
+    right: 15px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation.active .navigation-items {
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  header .navigation .navigation-items a {
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a:before {
+    background: #222;
+    height: 5px;
+  }
+
+  .menu-btn {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1.2em' height='1.2em' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M7 12h13m-10 6h10'/%3E%3C/svg%3E")
+      no-repeat;
+
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    /* background-color: #fff; */
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active {
+    z-index: 999;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1.2em' height='1.2em' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M21.29 4.12L16.7 8.71l1.59 1.59c.63.63.18 1.71-.71 1.71H13c-.55 0-1-.45-1-1v-4.6c0-.89 1.08-1.34 1.71-.71l1.59 1.59l4.59-4.59a.996.996 0 0 1 1.41 0c.38.4.38 1.03-.01 1.42M4.12 21.29l4.59-4.59l1.59 1.59c.63.63 1.71.18 1.71-.71V13c0-.55-.45-1-1-1h-4.6c-.89 0-1.34 1.08-.71 1.71l1.59 1.59l-4.59 4.59a.996.996 0 0 0 0 1.41c.4.38 1.03.38 1.42-.01'/%3E%3C/svg%3E")
+      no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.5s ease;
+  }
+
+}
+
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+
+.button button {
+  background-color: #00aeef;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 2px;
+  transition: 0.3s ease;
+}
+
+.button button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
